@@ -5,7 +5,7 @@ def main():
 
     games_to_convert = input("Which file would you like to convert? ")
 
-    with open(f"/Users/colesalvador/pythonshit/personal/league-stuff/champ-select-project/regional-results/{games_to_convert}") as file:
+    with open(f"/league-stuff/champ-select-project/regional-results/{games_to_convert}") as file:
         reader = csv.reader(file) 
 
         lolpedia_to_dict(reader)
@@ -63,7 +63,7 @@ def lolpedia_to_dict(matches):
     file_name = input("File name: ")
     
     
-    with open(f"/Users/colesalvador/pythonshit/personal/league-stuff/champ-select-project/regional-results/{file_name}.json", "w") as file:
+    with open(f"/league-stuff/champ-select-project/regional-results/{file_name}.json", "w") as file:
         json.dump(dictionaried_results, file, indent=4)
     
     
