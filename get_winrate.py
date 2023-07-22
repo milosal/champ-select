@@ -16,7 +16,7 @@ def get_winrate_one_region():
     region = input("In which region? ").lower()
     split = input("In Summer or Spring? ").lower()
 
-    with open(f"/Users/colesalvador/pythonshit/personal/league-stuff/champ-select-project/regional-results/{region.lower()}_2023_{split.lower()}.json") as file:
+    with open(f"/league-stuff/champ-select-project/regional-results/{region.lower()}_2023_{split.lower()}.json") as file:
         region_data = json.load(file)
 
     wins = 0
