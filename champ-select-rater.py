@@ -73,10 +73,10 @@ def print_draft(blue_picks, red_picks):
     red_images = {}
 
     for champ in blue_picks:
-        blue_images[champ] = Image.open(f"/Users/colesalvador/pythonshit/personal/league-stuff/champ-select-project/champion-images/{champ}.png").resize((200, 200))
+        blue_images[champ] = Image.open(f"/league-stuff/champ-select-project/champion-images/{champ}.png").resize((200, 200))
 
     for champ in red_picks:
-        red_images[champ] = Image.open(f"/Users/colesalvador/pythonshit/personal/league-stuff/champ-select-project/champion-images/{champ}.png").resize((200, 200))
+        red_images[champ] = Image.open(f"/league-stuff/champ-select-project/champion-images/{champ}.png").resize((200, 200))
 
     draft_image = Image.new("RGB", (1650, 1100))
 
